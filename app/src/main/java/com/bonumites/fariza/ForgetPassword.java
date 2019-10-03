@@ -8,10 +8,12 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 public class ForgetPassword extends AppCompatActivity {
     EditText emaileditxt3;
     Button frgtpsswrdDonebtn;
+    TextView emailenter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +30,7 @@ public class ForgetPassword extends AppCompatActivity {
         getSupportActionBar().setDisplayShowHomeEnabled(true);
 
 
-
+        emailenter = (TextView) findViewById(R.id.email_txtview3);
         emaileditxt3 = (EditText) findViewById(R.id.email_editxt3);
         frgtpsswrdDonebtn = (Button) findViewById(R.id.donebtn_frgtpsswrd);
         frgtpsswrdDonebtn.setOnClickListener(new View.OnClickListener() {
